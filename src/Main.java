@@ -2,14 +2,22 @@ public class Main {
 
     private int currentChapterNumber = 1090;
 
-    // this link will be used for initial link to download chapter, more chapter will be download after this chapter
-    private String chapterLink = "https://fast.novelupdates.net/book/shadow-slave/chapter-1090-tyrant";
 
-    // Example: C:\Users\Steve\Desktop\webnovel
-    private String pathToSaveDownloadedChapter = "/home/kritesh-thapa/AllFile8/test/";
+    // EDIT: change this data according to your novel choice
+    // ADD: add the lnk of first chapter you want to download, more chapter will be downloaded after this chapter
+    // EXAMPLE: chapterLink = ""
+    private String chapterLink = "";
 
-    // total chapters you want to download from, 100 means total 100 ch will be downloaded from given chapterLink in line 5
-    private int totalChapterToDonwload = 660;
+    // EDIT: change this data according to your novel choice
+    // ADD: add the path of folder you want to download chapters in your computer
+    // EXAMPLE: pathToSaveDownloadedChapter = "C:\\Users\\Steve\\Desktop\\novel\\";
+    private String pathToSaveDownloadedChapter = "";
+
+    // EDIT: change this data according to your novel choice
+    // ADD: add the total number of chapters you want to download, 100 means total 100 ch will be downloaded from given chapterLink in line 5
+    // EXAMPLE: totalChapterToDonwload = 100;
+    private int totalChapterToDonwload = 10;
+
 
     private DownloadChapter downloadChapter = new DownloadChapter(currentChapterNumber,totalChapterToDonwload,pathToSaveDownloadedChapter,chapterLink);
 
